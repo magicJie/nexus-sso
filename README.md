@@ -111,7 +111,7 @@ Need installed Maven and Docker:
 3. Run docker container:
 
     ```bash
-    docker compose down && docker compose up
+    docker-compose down && docker-compose up
     ```
 
 [0]: https://github.com/a-langer/nexus-sso/pkgs/container/nexus-sso "Docker image with SSO patch applied"
