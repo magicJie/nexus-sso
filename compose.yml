@@ -15,8 +15,8 @@ services:
   nexus:
     <<: *container
     image: ${NEXUS_IMAGE}
-    user: ${NEXUS_USER:-nexus}:${NEXUS_GROUP-nexus}
-    cpuset: ${NEXUS_CPUSET:-}
+    user: ${NEXUS_USER:-nexus}:${NEXUS_GROUP:-nexus}
+    #cpuset: ${NEXUS_CPUSET:-}
     cpus: ${NEXUS_CPUS:-4}
     mem_limit: ${NEXUS_MEM_LIMIT:-3000m}
     mem_reservation: ${NEXUS_MEM_RESERVATION:-512m}
